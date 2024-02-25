@@ -1,0 +1,56 @@
+.expertise-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  padding-top: 6%;
+}
+
+.expertise-text {
+  color: white;
+}
+
+.expertise-boxes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+  margin-bottom: 20px;
+}
+
+.expertise-box {
+  width: 320px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.box-title {
+  font-size: 23px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.box-description {
+  font-size: 17px;
+  color: white;
+  text-align: start;
+}
+
+.box-description-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.description-line {
+  width: 10px;
+  height: 100%;
+  background-color: #66a9f1;
+  margin-right: 15px;
+}
