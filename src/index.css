@@ -9,7 +9,6 @@ code {
 /* Apply general styles */
 body,
 html {
-  margin: 0;
   font-family: "Source Code Pro", Arial, sans-serif; /* Fallback to a sans-serif font */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

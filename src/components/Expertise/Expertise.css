@@ -2,6 +2,7 @@
   min-width: 100vw;
   min-height: 100vh;
   padding-top: 6%;
+  background-color: #131d26;
 }
 
 .expertise-text {
@@ -16,14 +17,14 @@
   margin-left: auto;
   margin-right: auto;
   width: 100vw;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 .expertise-box {
   width: 320px;
   height: 300px;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   margin: 10px;
   border: 2px solid white;
   display: flex;
@@ -51,6 +52,6 @@
 .description-line {
   width: 10px;
   height: 100%;
-  background-color: #66a9f1;
+  background-color: #cc6fd8;
   margin-right: 15px;
 }

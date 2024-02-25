@@ -2,7 +2,7 @@ import "./Header.css";
 
 function Header() {
   return (
-    <div className="header-container">
+    <div style={{ backgroundColor: "#131d26" }}>
       <div className="background-image">
         <div className="overlay-text">
           <p className="title-text">MARCO FREEMANTLE</p>

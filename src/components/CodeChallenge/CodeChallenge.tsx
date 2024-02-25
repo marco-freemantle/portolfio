@@ -38,9 +38,9 @@ function CodeChallenge() {
   };
 
   return (
-    <>
+    <div style={{ paddingRight: 10, paddingLeft: 10 }}>
       <span style={{ color: "green", fontSize: "14px" }}>
-        {`//Fix the function for a confetti explosion! 😄🏆`}
+        {`//Fix the function for a confetti explosion!😄`}
       </span>
       <Form className={`styled-code-block ${isWrongCode ? "wiggle" : ""}`}>
         <Form.Group>
@@ -51,6 +51,7 @@ function CodeChallenge() {
             className="styled-code-block"
             value={code}
             onChange={(e) => setCode(e.target.value)}
+            spellCheck={false}
           />
           <div
             style={{
@@ -74,7 +75,7 @@ function CodeChallenge() {
           Run Code
         </button>
       </div>
-    </>
+    </div>
   );
 }
 
