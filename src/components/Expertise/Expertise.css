@@ -26,16 +26,20 @@
   padding: 20px;
   border-radius: 15px;
   margin: 10px;
-  border: 2px solid white;
+  border: 2px solid grey;
+  box-shadow: 0 5px 10px rgba(204, 111, 216, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  background-color: #233443;
+  transform-style: preserve-3d;
 }
 
 .box-title {
   font-size: 23px;
   margin-bottom: 10px;
   color: white;
+  text-shadow: 2px 2px 4px rgba(204, 111, 216, 0.3);
 }
 
 .box-description {
@@ -54,4 +58,10 @@
   height: 100%;
   background-color: #cc6fd8;
   margin-right: 15px;
+}
+
+.inner-element {
+  display: flex;
+  flex-direction: column;
+  transform: translateZ(40px);
 }

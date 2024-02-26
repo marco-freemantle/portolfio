@@ -1,10 +1,11 @@
-import React, { ReactNode, useState } from "react";
+import React, { ReactNode } from "react";
 import "./Expertise.css";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import { FaReact } from "react-icons/fa";
 import { CiMobile4 } from "react-icons/ci";
 import { FaGamepad } from "react-icons/fa";
 import CodeChallenge from "../CodeChallenge/CodeChallenge";
+import Tilt from "react-parallax-tilt";
 
 interface ExpertiseBoxProps {
   icon: ReactNode;
@@ -18,14 +19,23 @@ const ExpertiseBox: React.FC<ExpertiseBoxProps> = ({
   description,
 }) => {
   return (
-    <div className="expertise-box">
-      <div style={{ marginBottom: 15 }}>{icon}</div>
-      <h2 className="box-title">{title}</h2>
-      <div className="box-description-container">
-        <div className="description-line"></div>
-        <p className="box-description">{description}</p>
+    <Tilt
+      tiltMaxAngleX={10}
+      tiltMaxAngleY={10}
+      scale={1.05}
+      transitionSpeed={2500}
+      perspective={500}
+      className="expertise-box"
+    >
+      <div className="inner-element">
+        <div style={{ marginBottom: 15 }}>{icon}</div>
+        <h2 className="box-title">{title}</h2>
+        <div className="box-description-container">
+          <div className="description-line" />
+          <p className="box-description">{description}</p>
+        </div>
       </div>
-    </div>
+    </Tilt>
   );
 };
 
