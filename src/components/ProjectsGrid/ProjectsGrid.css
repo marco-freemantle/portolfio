@@ -1,0 +1,9 @@
+.projects-container {
+  min-width: 100vw;
+  height: fit-content;
+  background-color: #131d26;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2%;
+}

@@ -1,0 +1,66 @@
+.work-container {
+  min-width: 100vw;
+  height: fit-content;
+  background-color: #131d26;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2%;
+}
+
+.work-title {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 65px;
+  text-align: left;
+  max-width: 70%;
+}
+
+.work-description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #a4abc0;
+  text-align: left;
+  margin: 0;
+  margin-left: 5px;
+  margin-top: 50px;
+}
+
+.work-title-description-container {
+  padding: 25px;
+  overflow-x: visible;
+  min-width: 40%;
+  flex-basis: 30%;
+  flex-grow: 1; /* Allow div to grow to fill the available space */
+}
+
+.featured-project-container {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.project-image {
+  width: 250px;
+  height: 530px;
+}
+
+.project-image-higher {
+  width: 250px;
+  height: 530px;
+  margin-top: 55px;
+}
+
+@media (max-width: 825px) {
+  .featured-project-container {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .project-image-higher {
+    margin-top: 0;
+  }
+}

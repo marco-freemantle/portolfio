@@ -1,0 +1,76 @@
+.styled-code-block {
+  background-color: #233443;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 15px;
+  resize: none;
+  border-width: 0px;
+  color: white;
+}
+
+.styled-code-block textarea {
+  color: white;
+}
+
+.styled-code-block textarea:focus {
+  outline: none;
+  background-color: #233443;
+  color: white;
+}
+
+.reset-button {
+  padding: 5px 10px;
+  background-color: #db685d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+}
+
+.attempt-button {
+  padding: 5px 10px;
+  background-color: #5d9adb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+  background-color: #4477ad;
+}
+
+.button-container {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.wiggle {
+  animation: wiggle 0.5s ease-in-out;
+}
