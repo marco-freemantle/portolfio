@@ -1,5 +1,9 @@
 import "./ProjectsGrid.css";
 import TrymHome from "../../images/trym-website.png";
+import MultiplayerShooter from "../../images/MultiplayerShooter.jpeg";
+import BandBox from "../../images/BandBox.png";
+import Iris from "../../images/Iris.png";
+import CalorieTracker from "../../images/CalorieTracker.png";
 
 interface ProjectCardProps {
   imageSrc: string;
@@ -29,26 +33,26 @@ function ProjectsGrid() {
           description="Trym facilitates seamless service marketing and booking management across web and mobile platforms."
         />
         <ProjectCard
-          imageSrc="image2.jpg"
-          title="Project 2"
-          description="Description of Project 2"
+          imageSrc={BandBox}
+          title="BandBox"
+          description="Comprehensive business management platform targeted at working musicians."
         />
         <ProjectCard
-          imageSrc="image3.jpg"
-          title="Project 3"
-          description="Description of Project 3"
+          imageSrc={CalorieTracker}
+          title="Calorie Tracker"
+          description="Intuitive app for managing diet recommendations and monitoring daily calorie intake and expenditure with ease."
         />
       </div>
       <div className="row">
         <ProjectCard
-          imageSrc="image4.jpg"
-          title="Project 4"
-          description="Description of Project 4"
+          imageSrc={MultiplayerShooter}
+          title="Multiplayer Shooter"
+          description="A fully networked multiplayer third-person shooter. Created in Unreal Engine 5 with C++."
         />
         <ProjectCard
-          imageSrc="image5.jpg"
-          title="Project 5"
-          description="Description of Project 5"
+          imageSrc={Iris}
+          title="Iris - Voice Assistant"
+          description="Similar to the beloved Alexa but a lot worse!"
         />
       </div>
     </div>
