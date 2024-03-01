@@ -21,7 +21,7 @@
 .project-card {
   flex: 1;
   min-width: 350px;
-  height: 375px;
+  height: 385px;
   background-color: #233443;
   padding: 0%;
   border-radius: 15px;
@@ -31,8 +31,8 @@
 }
 
 .project-card-image {
-  width: 100%;
-  height: 65%;
+  min-width: 100%;
+  min-height: 65%;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   object-fit: cover;
@@ -41,13 +41,14 @@
 .project-title-description-container {
   height: 100%;
   padding-left: 5%;
+  padding-right: 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 .project-card-title {
-  font-size: 30px;
+  font-size: 25px;
   color: white;
   font-family: "Lato", sans-serif;
   font-weight: 700;

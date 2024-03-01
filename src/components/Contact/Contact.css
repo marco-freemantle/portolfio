@@ -1,0 +1,9 @@
+.contact-container {
+  min-width: 100vw;
+  height: fit-content;
+  background-color: #131d26;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6%;
+}

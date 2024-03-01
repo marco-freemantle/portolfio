@@ -41,7 +41,7 @@ const ExpertiseBox: React.FC<ExpertiseBoxProps> = ({
 
 function Expertise() {
   return (
-    <div className="expertise-container">
+    <div className="expertise-container" id="expertise">
       <h1 className="expertise-text">My Expertise</h1>
       <div className="expertise-boxes">
         <ExpertiseBox

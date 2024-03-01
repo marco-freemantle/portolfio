@@ -1,9 +1,19 @@
 .custom-navbar {
   padding-left: 25px;
   padding-right: 25px;
-  background-color: transparent;
+  margin: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .nav-link {
   font-size: 17px;
+  color: aliceblue;
+}
+
+.nav-link:hover {
+  color: #66c8e3;
+  cursor: pointer;
 }

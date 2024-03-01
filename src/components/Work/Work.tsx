@@ -6,7 +6,7 @@ import Tilt from "react-parallax-tilt";
 
 function Work() {
   return (
-    <div className="work-container">
+    <div className="work-container" id="work">
       <div className="work-title-description-container">
         <h1 className="work-title">Things I'm Working On.</h1>
         <p className="work-description">

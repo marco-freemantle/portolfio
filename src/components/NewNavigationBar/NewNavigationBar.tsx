@@ -2,9 +2,9 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import "./Navigation.css";
+import "./NewNavigationBar.css";
 
-function Navigation() {
+function NewNavigationBar() {
   let navCollapsed = false;
 
   if (window.innerWidth < 770) {
@@ -12,29 +12,12 @@ function Navigation() {
   }
 
   return (
-    <Navbar expand="md" className="custom-navbar sticky-top" variant="dark">
+    <Navbar expand="md" className="custom-navbar-new fixed-top" variant="dark">
       <Container fluid>
-        <Navbar.Brand
-          onClick={() => {
-            const element = document.getElementById("home");
-            if (element) {
-              element.scrollIntoView({ behavior: "smooth" });
-            }
-          }}
-          style={{ cursor: "pointer" }}
-        >
-          {!navCollapsed && (
-            <span
-              style={{ color: "#66c8e3", fontSize: "22px", display: "inline" }}
-            >
-              MarcoFreemantle
-              <span style={{ color: "white", fontSize: "26px" }}>.</span>
-              <span style={{ color: "#bc77ed", fontSize: "26px" }}>_</span>
-            </span>
-          )}
-        </Navbar.Brand>
-
-        <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
+        <Navbar.Toggle
+          aria-controls={`offcanvasNavbar-expand-md`}
+          className="ms-auto"
+        />
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-md`}
           aria-labelledby={`offcanvasNavbarLabel-expand-md`}
@@ -62,9 +45,9 @@ function Navigation() {
                 : { background: "transparent" }
             }
           >
-            <Nav className="justify-content-end flex-grow-1 pe-3">
+            <Nav className="justify-content-center flex-grow-1 pe-3">
               <p
-                className="nav-link"
+                className="nav-link-new"
                 onClick={() => {
                   const element = document.getElementById("home");
                   if (element) {
@@ -75,7 +58,7 @@ function Navigation() {
                 // home
               </p>
               <p
-                className="nav-link"
+                className="nav-link-new"
                 onClick={() => {
                   const element = document.getElementById("expertise");
                   if (element) {
@@ -86,7 +69,7 @@ function Navigation() {
                 // expertise
               </p>
               <p
-                className="nav-link"
+                className="nav-link-new"
                 onClick={() => {
                   const element = document.getElementById("work");
                   if (element) {
@@ -97,7 +80,7 @@ function Navigation() {
                 // work
               </p>
               <p
-                className="nav-link"
+                className="nav-link-new"
                 onClick={() => {
                   const element = document.getElementById("contact");
                   if (element) {
@@ -115,4 +98,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default NewNavigationBar;
