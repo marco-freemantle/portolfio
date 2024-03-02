@@ -26,7 +26,7 @@ function Work() {
           scale={1.05}
           transitionSpeed={2500}
         >
-          <img src={TrymSearch} className="project-image-higher" />
+          <img src={TrymSearch} className="project-image-higher" alt="" />
         </Tilt>
         <Tilt
           tiltMaxAngleX={10}
@@ -34,7 +34,7 @@ function Work() {
           scale={1.05}
           transitionSpeed={2500}
         >
-          <img src={TrymLogin} className="project-image" />
+          <img src={TrymLogin} className="project-image" alt="" />
         </Tilt>
         <Tilt
           tiltMaxAngleX={10}
@@ -42,7 +42,7 @@ function Work() {
           scale={1.05}
           transitionSpeed={2500}
         >
-          <img src={TrymHome} className="project-image-higher" />
+          <img src={TrymHome} className="project-image-higher" alt="" />
         </Tilt>
       </div>
     </div>

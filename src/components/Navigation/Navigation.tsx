@@ -72,7 +72,7 @@ function Navigation() {
                   }
                 }}
               >
-                // home
+                {"// home"}
               </p>
               <p
                 className="nav-link"
@@ -83,7 +83,7 @@ function Navigation() {
                   }
                 }}
               >
-                // expertise
+                {"// expertise"}
               </p>
               <p
                 className="nav-link"
@@ -94,7 +94,7 @@ function Navigation() {
                   }
                 }}
               >
-                // work
+                {"// work"}
               </p>
               <p
                 className="nav-link"
@@ -105,7 +105,7 @@ function Navigation() {
                   }
                 }}
               >
-                // experience
+                {"// experience"}
               </p>
               <p
                 className="nav-link"
@@ -116,7 +116,7 @@ function Navigation() {
                   }
                 }}
               >
-                // contact
+                {"// contact"}
               </p>
             </Nav>
           </Offcanvas.Body>

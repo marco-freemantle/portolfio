@@ -55,7 +55,7 @@ function NewNavigationBar() {
                   }
                 }}
               >
-                // home
+                {"// home"}
               </p>
               <p
                 className="nav-link-new"
@@ -66,7 +66,7 @@ function NewNavigationBar() {
                   }
                 }}
               >
-                // expertise
+                {"// expertise"}
               </p>
               <p
                 className="nav-link-new"
@@ -77,7 +77,7 @@ function NewNavigationBar() {
                   }
                 }}
               >
-                // work
+                {"// work"}
               </p>
               <p
                 className="nav-link"
@@ -88,7 +88,7 @@ function NewNavigationBar() {
                   }
                 }}
               >
-                // experience
+                {"// experience"}
               </p>
               <p
                 className="nav-link-new"
@@ -99,7 +99,7 @@ function NewNavigationBar() {
                   }
                 }}
               >
-                // contact
+                {"// contact"}
               </p>
             </Nav>
           </Offcanvas.Body>
