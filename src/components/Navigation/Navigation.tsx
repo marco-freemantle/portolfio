@@ -7,12 +7,12 @@ import "./Navigation.css";
 function Navigation() {
   let navCollapsed = false;
 
-  if (window.innerWidth < 770) {
+  if (window.innerWidth <= 990) {
     navCollapsed = true;
   }
 
   return (
-    <Navbar expand="md" className="custom-navbar sticky-top" variant="dark">
+    <Navbar expand="lg" className="custom-navbar sticky-top" variant="dark">
       <Container fluid>
         <Navbar.Brand
           onClick={() => {
@@ -95,6 +95,17 @@ function Navigation() {
                 }}
               >
                 // work
+              </p>
+              <p
+                className="nav-link"
+                onClick={() => {
+                  const element = document.getElementById("contact");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
+                // experience
               </p>
               <p
                 className="nav-link"

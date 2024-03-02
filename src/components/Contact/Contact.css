@@ -1,9 +1,135 @@
 .contact-container {
   min-width: 100vw;
-  height: fit-content;
+  height: 100%;
   background-color: #131d26;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 50px;
+  flex-wrap: wrap;
+}
+
+.left-contact-container {
+  flex: 1;
+  min-height: 700px;
+  max-height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6%;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.667);
+  padding: 5%;
+}
+
+.contact-title {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 43px;
+  max-width: 90%;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.contact-description {
+  color: white;
+  font-weight: 400;
+  font-size: 19px;
+  max-width: 90%;
+  text-align: left;
+}
+
+.contact-method {
+  color: white;
+  font-weight: 400;
+  font-size: 19px;
+  max-width: 70%;
+  text-align: left;
+  margin-bottom: 0%;
+}
+
+.right-contact-container {
+  flex: 1;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #b04cbe;
+  padding: 4%;
+  min-width: 425px;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.accordion-button {
+  background-color: #1174cb !important;
+  border-radius: 15px !important;
+  padding: 25px !important;
+  color: white !important;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  border-radius: 15px !important;
+  border: none;
+}
+
+.accordion-header {
+  border-radius: 15px !important;
+}
+
+.accordion-title {
+  margin-bottom: 0% !important;
+}
+
+.accordion-date {
+  margin: none !important;
+}
+
+.accordion-body {
+  color: rgb(0, 0, 0) !important;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: left;
+}
+
+.accordion-header-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  color: white;
+}
+
+/*media query anything less than 620px*/
+@media (max-width: 620px) {
+  .contact-title {
+    font-size: 35px;
+  }
+
+  .contact-description {
+    font-size: 16px;
+  }
+
+  .contact-method {
+    font-size: 16px;
+  }
+
+  .accordion-button {
+    padding: 15px !important;
+    color: white !important;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+  }
 }
