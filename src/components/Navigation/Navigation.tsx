@@ -4,13 +4,83 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "./Navigation.css";
 
+let navCollapsed = false;
+
+if (window.innerWidth <= 990) {
+  navCollapsed = true;
+}
+
+export function OffCanvasNavBody() {
+  return (
+    <Offcanvas.Body
+      style={
+        navCollapsed
+          ? { backgroundColor: "#131d26" }
+          : { background: "transparent" }
+      }
+    >
+      <Nav className="justify-content-end flex-grow-1 pe-3">
+        <p
+          className="nav-link"
+          onClick={() => {
+            const element = document.getElementById("home");
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+        >
+          {"// home"}
+        </p>
+        <p
+          className="nav-link"
+          onClick={() => {
+            const element = document.getElementById("expertise");
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+        >
+          {"// expertise"}
+        </p>
+        <p
+          className="nav-link"
+          onClick={() => {
+            const element = document.getElementById("work");
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+        >
+          {"// work"}
+        </p>
+        <p
+          className="nav-link"
+          onClick={() => {
+            const element = document.getElementById("contact");
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+        >
+          {"// experience"}
+        </p>
+        <p
+          className="nav-link"
+          onClick={() => {
+            const element = document.getElementById("contact");
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+        >
+          {"// contact"}
+        </p>
+      </Nav>
+    </Offcanvas.Body>
+  );
+}
+
 function Navigation() {
-  let navCollapsed = false;
-
-  if (window.innerWidth <= 990) {
-    navCollapsed = true;
-  }
-
   return (
     <Navbar expand="lg" className="custom-navbar sticky-top" variant="dark">
       <Container fluid>
@@ -55,71 +125,7 @@ function Navigation() {
               MarcoFreemantle._
             </Offcanvas.Title>
           </Offcanvas.Header>
-          <Offcanvas.Body
-            style={
-              navCollapsed
-                ? { backgroundColor: "#131d26" }
-                : { background: "transparent" }
-            }
-          >
-            <Nav className="justify-content-end flex-grow-1 pe-3">
-              <p
-                className="nav-link"
-                onClick={() => {
-                  const element = document.getElementById("home");
-                  if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
-                {"// home"}
-              </p>
-              <p
-                className="nav-link"
-                onClick={() => {
-                  const element = document.getElementById("expertise");
-                  if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
-                {"// expertise"}
-              </p>
-              <p
-                className="nav-link"
-                onClick={() => {
-                  const element = document.getElementById("work");
-                  if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
-                {"// work"}
-              </p>
-              <p
-                className="nav-link"
-                onClick={() => {
-                  const element = document.getElementById("contact");
-                  if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
-                {"// experience"}
-              </p>
-              <p
-                className="nav-link"
-                onClick={() => {
-                  const element = document.getElementById("contact");
-                  if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
-                {"// contact"}
-              </p>
-            </Nav>
-          </Offcanvas.Body>
+          <OffCanvasNavBody />
         </Navbar.Offcanvas>
       </Container>
     </Navbar>

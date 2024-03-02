@@ -67,3 +67,10 @@
     margin-top: 0;
   }
 }
+
+/*media query anything less than 620px*/
+@media (max-width: 620px) {
+  .work-title {
+    font-size: 45px;
+  }
+}

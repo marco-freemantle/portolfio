@@ -2,17 +2,18 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import { OffCanvasNavBody } from "../Navigation/Navigation";
 import "./NewNavigationBar.css";
 
 function NewNavigationBar() {
   let navCollapsed = false;
 
-  if (window.innerWidth < 770) {
+  if (window.innerWidth < 992) {
     navCollapsed = true;
   }
 
   return (
-    <Navbar expand="md" className="custom-navbar-new fixed-top" variant="dark">
+    <Navbar expand="lg" className="custom-navbar-new fixed-top" variant="dark">
       <Container fluid>
         <Navbar.Toggle
           aria-controls={`offcanvasNavbar-expand-md`}
@@ -38,71 +39,78 @@ function NewNavigationBar() {
               MarcoFreemantle._
             </Offcanvas.Title>
           </Offcanvas.Header>
-          <Offcanvas.Body
-            style={
-              navCollapsed
-                ? { backgroundColor: "#131d26" }
-                : { background: "transparent" }
-            }
-          >
-            <Nav className="justify-content-center flex-grow-1 pe-3">
-              <p
-                className="nav-link-new"
-                onClick={() => {
-                  const element = document.getElementById("home");
-                  if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
-                {"// home"}
-              </p>
-              <p
-                className="nav-link-new"
-                onClick={() => {
-                  const element = document.getElementById("expertise");
-                  if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
-                {"// expertise"}
-              </p>
-              <p
-                className="nav-link-new"
-                onClick={() => {
-                  const element = document.getElementById("work");
-                  if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
-                {"// work"}
-              </p>
-              <p
-                className="nav-link"
-                onClick={() => {
-                  const element = document.getElementById("contact");
-                  if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
-                {"// experience"}
-              </p>
-              <p
-                className="nav-link-new"
-                onClick={() => {
-                  const element = document.getElementById("contact");
-                  if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
-                {"// contact"}
-              </p>
-            </Nav>
-          </Offcanvas.Body>
+          {!navCollapsed ? (
+            <Offcanvas.Body
+              style={
+                navCollapsed
+                  ? { backgroundColor: "#131d26" }
+                  : {
+                      background: "transparent",
+                      justifyContent: "center",
+                    }
+              }
+            >
+              <Nav className="nav-links-container">
+                <p
+                  className="nav-link-new"
+                  onClick={() => {
+                    const element = document.getElementById("home");
+                    if (element) {
+                      element.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  {"// home"}
+                </p>
+                <p
+                  className="nav-link-new"
+                  onClick={() => {
+                    const element = document.getElementById("expertise");
+                    if (element) {
+                      element.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  {"// expertise"}
+                </p>
+                <p
+                  className="nav-link-new"
+                  onClick={() => {
+                    const element = document.getElementById("work");
+                    if (element) {
+                      element.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  {"// work"}
+                </p>
+                <p
+                  className="nav-link-new"
+                  onClick={() => {
+                    const element = document.getElementById("contact");
+                    if (element) {
+                      element.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  {"// experience"}
+                </p>
+                <p
+                  className="nav-link-new"
+                  onClick={() => {
+                    const element = document.getElementById("contact");
+                    if (element) {
+                      element.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
+                  {"// contact"}
+                </p>
+              </Nav>
+            </Offcanvas.Body>
+          ) : (
+            <OffCanvasNavBody />
+          )}
         </Navbar.Offcanvas>
       </Container>
     </Navbar>

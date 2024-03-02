@@ -72,3 +72,10 @@
   flex-direction: column;
   transform: translateZ(40px);
 }
+
+/*media query anything less than 620px*/
+@media (max-width: 620px) {
+  .expertise-text {
+    font-size: 45px;
+  }
+}
