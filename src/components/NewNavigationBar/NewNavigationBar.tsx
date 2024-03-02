@@ -87,7 +87,7 @@ function NewNavigationBar() {
                 <p
                   className="nav-link-new"
                   onClick={() => {
-                    const element = document.getElementById("contact");
+                    const element = document.getElementById("experience");
                     if (element) {
                       element.scrollIntoView({ behavior: "smooth" });
                     }

@@ -56,7 +56,7 @@ export function OffCanvasNavBody() {
         <p
           className="nav-link"
           onClick={() => {
-            const element = document.getElementById("contact");
+            const element = document.getElementById("experience");
             if (element) {
               element.scrollIntoView({ behavior: "smooth" });
             }

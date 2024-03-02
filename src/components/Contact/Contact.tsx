@@ -3,8 +3,8 @@ import "./Contact.css";
 
 function Contact() {
   return (
-    <div className="contact-container" id="contact">
-      <div className="left-contact-container">
+    <div className="contact-container">
+      <div className="left-contact-container" id="experience">
         <h2 className="contact-title">Professional Experience</h2>
         <Accordion defaultActiveKey="0" className="accordion">
           <Accordion.Item eventKey="1">
@@ -78,7 +78,7 @@ function Contact() {
           </Accordion.Item>
         </Accordion>
       </div>
-      <div className="right-contact-container">
+      <div className="right-contact-container" id="contact">
         <div>
           <h2 className="contact-title">
             Available for work and open to new opportunities
