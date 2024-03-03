@@ -18,18 +18,20 @@ function Header() {
           )}
         </div>
       </div>
-      <div
-        className="arrow-container"
-        onClick={() => {
-          const element = document.getElementById("expertise");
-          if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-          }
-        }}
-        style={{ cursor: "pointer" }}
-      >
-        <div className="arrow"></div>
-      </div>
+      {window.innerWidth >= 1000 && (
+        <div
+          className="arrow-container"
+          onClick={() => {
+            const element = document.getElementById("expertise");
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+          style={{ cursor: "pointer" }}
+        >
+          <div className="arrow"></div>
+        </div>
+      )}
     </div>
   );
 }

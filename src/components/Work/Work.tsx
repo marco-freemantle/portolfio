@@ -10,7 +10,7 @@ function Work() {
       <div className="work-title-description-container">
         <h1 className="work-title">Things I'm Working On.</h1>
         <p className="work-description">
-          My current project, 'Trym,' is a platform dedicated to empowering
+          I'm currently working on 'Trym' - a platform dedicated to empowering
           barbers in the UK. It facilitates seamless service marketing and
           booking management across web and mobile platforms. With extensive
           experience in scalable solutions, Trym offers tailored features to

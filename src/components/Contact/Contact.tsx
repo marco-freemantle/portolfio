@@ -7,35 +7,56 @@ function Contact() {
       <div className="left-contact-container" id="experience">
         <h2 className="contact-title">Professional Experience</h2>
         <Accordion defaultActiveKey="0" className="accordion">
-          <Accordion.Item eventKey="1">
+          <Accordion.Item eventKey="0">
             <Accordion.Header>
               <div className="accordion-header-div">
-                <p style={{ marginBottom: "0%" }}>
-                  Uber Driver & Professional Musician
-                </p>
+                <p style={{ marginBottom: "0%" }}>Software Engineer @ Trym</p>
                 {window.innerWidth > 600 && (
                   <p style={{ marginBottom: "0%", marginRight: "10px" }}>
-                    2021-Current
+                    2023-Current
                   </p>
                 )}
               </div>
             </Accordion.Header>
             <Accordion.Body>
-              I have successfully managed two self-employed roles as an Uber
-              driver and a professional musician while simultaneously dedicating
-              time to enhance my skills as a software developer through ongoing
-              study. This balance has afforded me the flexibility to maintain
-              full-time work while also delving into the world of software
-              development. I've also leveraged this flexibility to work on my
-              own software projects, further refining my skills and expanding my
-              portfolio.
+              I specialise in React Native and React.js, creating robust mobile
+              and web apps. Collaborating closely with stakeholders, I translate
+              business needs into technical solutions, ensuring user-friendly
+              experiences. I optimise performance and responsiveness across
+              platforms and actively participate in code reviews for quality
+              assurance. I troubleshoot technical issues to maintain reliability
+              and stay updated with the latest technologies to enhance
+              development processes continually.
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="0">
+          <Accordion.Item eventKey="1">
             <Accordion.Header>
               <div className="accordion-header-div">
                 <p style={{ marginBottom: "0%" }}>
-                  Comp Sci Student @ The Open University
+                  Professional Musician @ Onyx
+                </p>
+                {window.innerWidth > 600 && (
+                  <p style={{ marginBottom: "0%", marginRight: "10px" }}>
+                    2018-Current
+                  </p>
+                )}
+              </div>
+            </Accordion.Header>
+            <Accordion.Body>
+              As the founder of Onyx Party Band, I've led our successful
+              show-band for over six years, managing logistics and performances
+              with precision. Our clientele includes organizations like NSPCC,
+              St. Gemma’s Hospice, Spire Healthcare, and The British Army.
+              Spearheading business development, I've expanded our reach and
+              reputation. I oversee all aspects of performances and client
+              interactions, ensuring seamless execution and satisfaction.
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="2">
+            <Accordion.Header>
+              <div className="accordion-header-div">
+                <p style={{ marginBottom: "0%" }}>
+                  Computing & IT @ The Open University
                 </p>
                 {window.innerWidth > 600 && (
                   <p style={{ marginBottom: "0%", marginRight: "10px" }}>
@@ -53,7 +74,7 @@ function Contact() {
               computer science theory and problem solving.
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="2">
+          <Accordion.Item eventKey="3">
             <Accordion.Header>
               <div className="accordion-header-div">
                 <p style={{ marginBottom: "0%" }}>

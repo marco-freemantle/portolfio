@@ -1,6 +1,5 @@
 .contact-container {
   min-width: 100vw;
-  height: 100%;
   background-color: #131d26;
   display: flex;
   flex-direction: row;
@@ -11,8 +10,7 @@
 
 .left-contact-container {
   flex: 1;
-  min-height: 700px;
-  max-height: fit-content;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +48,7 @@
 
 .right-contact-container {
   flex: 1;
-  min-height: 700px;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
