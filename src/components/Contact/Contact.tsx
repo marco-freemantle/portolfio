@@ -10,7 +10,7 @@ function Contact() {
           <Accordion.Item eventKey="0">
             <Accordion.Header>
               <div className="accordion-header-div">
-                <p style={{ marginBottom: "0%" }}>Software Engineer @ Trym</p>
+                <p style={{ marginBottom: "0%" }}>Driver @ Uber</p>
                 {window.innerWidth > 600 && (
                   <p style={{ marginBottom: "0%", marginRight: "10px" }}>
                     2023-Current
@@ -19,14 +19,15 @@ function Contact() {
               </div>
             </Accordion.Header>
             <Accordion.Body>
-              I specialise in React Native and React.js, creating robust mobile
-              and web apps. Collaborating closely with stakeholders, I translate
-              business needs into technical solutions, ensuring user-friendly
-              experiences. I optimise performance and responsiveness across
-              platforms and actively participate in code reviews for quality
-              assurance. I troubleshoot technical issues to maintain reliability
-              and stay updated with the latest technologies to enhance
-              development processes continually.
+              As an Uber driver, I am dedicated to ensuring passengers have safe
+              and enjoyable transportation experiences. More than just driving,
+              I take pleasure in engaging with passengers, initiating meaningful
+              conversations, and building rapport with new people. My dedication
+              to professionalism, timeliness, and exceptional customer service
+              guarantees that each ride is a pleasant and comfortable journey.
+              With a proven track record of completing over a thousand trips and
+              consistently earning a perfect 5-star rating, I exceed the
+              industry average of 4.85.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
