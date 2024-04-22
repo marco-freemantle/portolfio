@@ -11,12 +11,11 @@ function Work() {
         <h1 className="work-title">Things I'm Working On.</h1>
         <p className="work-description">
           I'm currently working on 'Trym' - a platform dedicated to empowering
-          barbers in the UK. It facilitates seamless service marketing and
-          booking management across web and mobile platforms. With extensive
-          experience in scalable solutions, Trym offers tailored features to
-          suit individual barbering needs. By providing actionable insights for
-          business enhancement and leveraging cutting-edge technology, Trym aims
-          to simplify the barber-client experience.
+          barbers in the UK. It facilitates service marketing and will soon
+          provide in-app booking management across web and mobile platforms.
+          Trym offers tailored features to suit individual barbering needs. Trym
+          is aimed at improving the barber-client experience by offering a
+          platform that allows barbers to elevate their businesses.
         </p>
       </div>
       <div className="featured-project-container">

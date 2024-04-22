@@ -22,12 +22,7 @@ function Contact() {
               As an Uber driver, I am dedicated to ensuring passengers have safe
               and enjoyable transportation experiences. More than just driving,
               I take pleasure in engaging with passengers, initiating meaningful
-              conversations, and building rapport with new people. My dedication
-              to professionalism, timeliness, and exceptional customer service
-              guarantees that each ride is a pleasant and comfortable journey.
-              With a proven track record of completing over a thousand trips and
-              consistently earning a perfect 5-star rating, I exceed the
-              industry average of 4.85.
+              conversations, and building rapport with new people.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
@@ -113,6 +108,14 @@ function Contact() {
           <p className="contact-method">
             <a href="mailto:marcofreemantle@gmail.com" className="contact-link">
               marcofreemantle@gmail.com
+            </a>
+          </p>
+          <p className="contact-method">
+            <a
+              href="https://www.linkedin.com/in/marco-freemantle-9a7185305/"
+              className="contact-link"
+            >
+              LinkedIn
             </a>
           </p>
           <p className="contact-method">

@@ -5,7 +5,7 @@ import ConfettiExplosion from "react-confetti-explosion";
 
 function CodeChallenge() {
   const challengeAnswer =
-    "function findLargestNumber(numbers) {\n    let largest = 0;\n    for (let i = 0; i < numbers.length; i++) {\n        if (numbers[i] > largest) {\n            largest = numbers[i];\n        }\n    }\n    return largest;\n}";
+    "functionfindLargestNumber(numbers){letlargest=0;for(leti=0;i<numbers.length;i++){if(numbers[i]>largest){largest=numbers[i];}}returnlargest;}";
   const initialState =
     "function findLargestNumber(numbers) {\n    let largest = 0;\n    for (let i = 0; i < numbers.length; i++) {\n        if (numbers[i] < largest) {\n            largest = numbers[i];\n        }\n    }\n    return largest;\n}";
   const [code, setCode] = useState(initialState);
@@ -16,7 +16,7 @@ function CodeChallenge() {
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
     event.preventDefault();
-    if (code === challengeAnswer) {
+    if (code.replace(/\s/g, "") === challengeAnswer) {
       setIsExploding(true);
       setIsWrongCode(false);
     } else {

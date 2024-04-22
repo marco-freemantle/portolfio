@@ -12,5 +12,5 @@ html {
   font-family: "Source Code Pro", Arial, sans-serif; /* Fallback to a sans-serif font */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: #131d26;
 }

@@ -47,12 +47,12 @@ function Expertise() {
         <ExpertiseBox
           icon={<HiOutlineComputerDesktop size={40} color="#66a9f1" />}
           title="Sofware Development"
-          description="Experienced in both functional and OOP programming languages: TypeScript, Javascript, Python, C#, Java"
+          description="Experienced in both functional and OOP programming languages: TypeScript, Javascript, Python, C#, C++"
         />
         <ExpertiseBox
           icon={<FaReact size={40} color="#66a9f1" />}
           title="Full-stack React Dev"
-          description="Passionate about full-stack development. Proficient with HTML, CSS, JS, Typescript, React, Firebase."
+          description="Passionate about full-stack development. Proficient with HTML, CSS, JS, TS, React, Firebase, Express.js."
         />
         <ExpertiseBox
           icon={<CiMobile4 size={40} color="#66a9f1" />}
