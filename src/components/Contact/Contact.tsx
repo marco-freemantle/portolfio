@@ -7,45 +7,27 @@ function Contact() {
       <div className="left-contact-container" id="experience">
         <h2 className="contact-title">Professional Experience</h2>
         <Accordion defaultActiveKey="0" className="accordion">
-          <Accordion.Item eventKey="0">
-            <Accordion.Header>
-              <div className="accordion-header-div">
-                <p style={{ marginBottom: "0%" }}>Driver @ Uber</p>
-                {window.innerWidth > 600 && (
-                  <p style={{ marginBottom: "0%", marginRight: "10px" }}>
-                    2023-Current
-                  </p>
-                )}
-              </div>
-            </Accordion.Header>
-            <Accordion.Body>
-              As an Uber driver, I am dedicated to ensuring passengers have safe
-              and enjoyable transportation experiences. More than just driving,
-              I take pleasure in engaging with passengers, initiating meaningful
-              conversations, and building rapport with new people.
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="1">
+          <Accordion.Item eventKey="3">
             <Accordion.Header>
               <div className="accordion-header-div">
                 <p style={{ marginBottom: "0%" }}>
-                  Professional Musician @ Onyx
+                  Software Intern @ Media Advancements
                 </p>
                 {window.innerWidth > 600 && (
                   <p style={{ marginBottom: "0%", marginRight: "10px" }}>
-                    2018-Current
+                    2024-2024
                   </p>
                 )}
               </div>
             </Accordion.Header>
             <Accordion.Body>
-              As the founder of Onyx Party Band, I've led our successful
-              show-band for over six years, managing logistics and performances
-              with precision. Our clientele includes organizations like NSPCC,
-              St. Gemma’s Hospice, Spire Healthcare, and The British Army.
-              Spearheading business development, I've expanded our reach and
-              reputation. I oversee all aspects of performances and client
-              interactions, ensuring seamless execution and satisfaction.
+              After completing my studies, I pursued practical experience and
+              worked as a software engineer at Media Advancements. In this role,
+              I actively contributed to their extensive codebase. My tasks
+              encompassed TypeScript programming, collaborating with back-end
+              APIs, debugging and writing tests. I was able to apply my
+              knowledge of computer science to real-world problems and develop
+              my skills as a software engineer.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="2">
@@ -70,27 +52,27 @@ function Contact() {
               computer science theory and problem solving.
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="3">
+          <Accordion.Item eventKey="1">
             <Accordion.Header>
               <div className="accordion-header-div">
                 <p style={{ marginBottom: "0%" }}>
-                  Software Intern @ Media Advancements
+                  Professional Musician @ Onyx
                 </p>
                 {window.innerWidth > 600 && (
                   <p style={{ marginBottom: "0%", marginRight: "10px" }}>
-                    2021-2021
+                    2018-Current
                   </p>
                 )}
               </div>
             </Accordion.Header>
             <Accordion.Body>
-              While studying, I pursued practical experience and worked as a
-              software developer at Media Advancements. In this role, I actively
-              contributed to their extensive codebase. My tasks encompassed
-              TypeScript programming, collaborating with back-end APIs,
-              debugging and writing tests. I was able to apply my knowledge of
-              computer science to real-world problems and develop my skills as a
-              software developer.
+              As the founder of Onyx Party Band, I've led our successful
+              show-band for over six years, managing logistics and performances
+              with precision. Our clientele includes organizations like NSPCC,
+              St. Gemma’s Hospice, Spire Healthcare, and The British Army.
+              Spearheading business development, I've expanded our reach and
+              reputation. I oversee all aspects of performances and client
+              interactions, ensuring seamless execution and satisfaction.
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
