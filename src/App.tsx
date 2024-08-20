@@ -34,7 +34,6 @@ function App(): JSX.Element {
       )}
       <Header />
       <Expertise />
-      <Work />
       <ProjectsGrid />
       <Contact />
     </div>

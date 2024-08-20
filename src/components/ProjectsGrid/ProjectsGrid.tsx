@@ -41,13 +41,8 @@ function ProjectCard({ imageSrc, title, description, link }: ProjectCardProps) {
 function ProjectsGrid() {
   return (
     <div className="projects-container">
+      <h1 className="expertise-text">Things I'm Working On.</h1>
       <div className="row">
-        <ProjectCard
-          imageSrc={TrymHome}
-          title="Trym"
-          description="Seamless service marketing and booking management across web and mobile platforms."
-          link="https://mytrym.com/"
-        />
         <ProjectCard
           imageSrc={BandBox}
           title="BandBox"

@@ -47,7 +47,7 @@ function Expertise() {
         <ExpertiseBox
           icon={<HiOutlineComputerDesktop size={40} color="#66a9f1" />}
           title="Sofware Development"
-          description="Experienced in both functional and OOP programming languages: TypeScript, Javascript, Python, C#, C++"
+          description="Experienced in both functional and OOP programming languages: JavaScript, TypeScript, Python, C#, C++"
         />
         <ExpertiseBox
           icon={<FaReact size={40} color="#66a9f1" />}
@@ -62,7 +62,7 @@ function Expertise() {
         <ExpertiseBox
           icon={<FaGamepad size={40} color="#66a9f1" />}
           title="Game Development"
-          description="Skilled in Unreal Engine. Enjoys creating immersive visual experiences and exploring new game mechanics as a hobby."
+          description="Skilled in Unreal Engine and Unity. I enjoy exploring new multiplayer game mechanics as a hobby."
         />
       </div>
       <CodeChallenge />

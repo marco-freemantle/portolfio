@@ -5,31 +5,8 @@ function Contact() {
   return (
     <div className="contact-container">
       <div className="left-contact-container" id="experience">
-        <h2 className="contact-title">Professional Experience</h2>
+        <h2 className="contact-title">About Me</h2>
         <Accordion defaultActiveKey="0" className="accordion">
-          <Accordion.Item eventKey="3">
-            <Accordion.Header>
-              <div className="accordion-header-div">
-                <p style={{ marginBottom: "0%" }}>
-                  Software Intern @ Media Advancements
-                </p>
-                {window.innerWidth > 600 && (
-                  <p style={{ marginBottom: "0%", marginRight: "10px" }}>
-                    2024-2024
-                  </p>
-                )}
-              </div>
-            </Accordion.Header>
-            <Accordion.Body>
-              After completing my studies, I pursued practical experience and
-              worked as a software engineer at Media Advancements. In this role,
-              I actively contributed to their extensive codebase. My tasks
-              encompassed TypeScript programming, collaborating with back-end
-              APIs, debugging and writing tests. I was able to apply my
-              knowledge of computer science to real-world problems and develop
-              my skills as a software engineer.
-            </Accordion.Body>
-          </Accordion.Item>
           <Accordion.Item eventKey="2">
             <Accordion.Header>
               <div className="accordion-header-div">
@@ -68,11 +45,11 @@ function Contact() {
             <Accordion.Body>
               As the founder of Onyx Party Band, I've led our successful
               show-band for over six years, managing logistics and performances
-              with precision. Our clientele includes organizations like NSPCC,
-              St. Gemma’s Hospice, Spire Healthcare, and The British Army.
-              Spearheading business development, I've expanded our reach and
-              reputation. I oversee all aspects of performances and client
-              interactions, ensuring seamless execution and satisfaction.
+              with precision. Our clientele includes organisations like NSPCC,
+              St. Gemma’s Hospice, Spire Healthcare, and The British Army. Over
+              the last 7 years, I have expanded our reach and reputation. I
+              oversee all aspects of performances and client interactions,
+              ensuring seamless execution and satisfaction.
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
@@ -90,14 +67,6 @@ function Contact() {
           <p className="contact-method">
             <a href="mailto:marcofreemantle@gmail.com" className="contact-link">
               marcofreemantle@gmail.com
-            </a>
-          </p>
-          <p className="contact-method">
-            <a
-              href="https://www.linkedin.com/in/marco-freemantle-9a7185305/"
-              className="contact-link"
-            >
-              LinkedIn
             </a>
           </p>
           <p className="contact-method">
