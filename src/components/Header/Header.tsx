@@ -10,8 +10,8 @@ function Header() {
           <p className="subtitle-text">I build things for the internet.</p>
           {window.innerWidth > 1200 && (
             <p className="description">
-              I enjoy building performant applications that solve real-world
-              problems and provide users with an incredible experience.
+              I build performant applications that solve real-world problems and
+              provide users with an incredible experience.
             </p>
           )}
         </div>

@@ -2,11 +2,11 @@ import "./ProjectsGrid.css";
 import MultiplayerShooter from "../../content/MultiplayerShooter.jpeg";
 import BandBox from "../../content/BandBox.png";
 import Iris from "../../content/Iris.png";
-import CalorieTracker from "../../content/CalorieTracker.png";
 import Tilt from "react-parallax-tilt";
 import ShooterVideo from "../../content/ShooterVideo.mp4";
 import RPGTestImage from "../../content/RPGTest.png";
 import RPGTestVid from "../../content/RPGTest.mp4";
+import BandBoxVid from "../../content/BandBoxVideo.mp4";
 
 interface ProjectCardProps {
   imageSrc: string;
@@ -72,20 +72,13 @@ function ProjectsGrid() {
         />
         <ProjectCard
           imageSrc={BandBox}
-          videoSrc={"none"}
+          videoSrc={BandBoxVid}
           title="BandBox"
           description="Comprehensive business management platform targeted at working musicians."
           link="https://shorturl.at/cnstY"
         />
       </div>
       <div className="row">
-        <ProjectCard
-          imageSrc={CalorieTracker}
-          videoSrc={"none"}
-          title="Calorie Tracker"
-          description="Manage diet recommendations and monitor daily calorie intake and expenditure with ease."
-          link="https://shorturl.at/bpNT0"
-        />
         <ProjectCard
           imageSrc={Iris}
           videoSrc={"none"}
