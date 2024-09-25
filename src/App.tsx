@@ -4,7 +4,6 @@ import Expertise from "./components/Expertise/Expertise";
 import Header from "./components/Header/Header";
 import Navigation from "./components/Navigation/Navigation";
 import NewNavigationBar from "./components/NewNavigationBar/NewNavigationBar";
-import Work from "./components/Work/Work";
 import "overlayscrollbars/overlayscrollbars.css";
 import Contact from "./components/Contact/Contact";
 import ProjectsGrid from "./components/ProjectsGrid/ProjectsGrid";
